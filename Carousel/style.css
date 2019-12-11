@@ -1,0 +1,111 @@
+body {
+    overflow: hidden;
+    background-color: rgb(63, 81, 187);
+}
+#carousel, img {
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} 
+@media screen and (min-width:1001px) {
+img.center1 {
+    transform: scale(0.8,0.7);
+    left: -200px;
+}
+img.center2 {
+    z-index: 1;
+}
+img.center3 {
+    transform: scale(0.8,0.7);
+    left: 200px;
+}        
+.controls {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+.controls>a:first-child {
+    position: absolute;
+    left: 17%;
+    font-size: 50px;
+    color:rgb(46, 181, 223);
+}
+.controls>a:last-child {
+    position: absolute;
+    right: 17%;
+    font-size: 50px;
+    color:rgb(46, 181, 223);
+}
+.indicators {
+    position: absolute;
+    width: 100%;
+    top: 75%;
+    left: 50%;
+}
+.indicators a{
+    color: rgb(46, 181, 223);
+}
+}
+@media screen and (max-width:1000px) {
+    .center1_1
+    {
+       position: absolute; 
+       transform: scale(0.8,0.7);
+       margin: auto;
+       top:-35%;
+       bottom: 0;
+       left: 0;
+       right: 0;
+        
+    }
+    .center2_2
+    {
+       position: absolute;
+        z-index: 1;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .center3_3
+    {
+       position: absolute;
+       transform: scale(0.8,0.7);
+       margin: auto;
+       top:35%;
+       bottom: 0;
+       left: 0;
+       right: 0;
+    }   
+
+    .controls {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+    }
+    .controls>a:first-child {
+        position: absolute;
+        left: 17%;
+        font-size: 50px;
+        color:rgb(46, 181, 223);
+    }
+    .controls>a:last-child {
+        position: absolute;
+        right: 17%;
+        font-size: 50px;
+        color:rgb(46, 181, 223);
+    }
+    .indicators {
+        width: 100%;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+    }
+    .indicators a{
+        color: rgb(46, 181, 223);
+    }
+}
