@@ -1,0 +1,140 @@
+//http://appco.themetags.com/index.html
+body {
+    font-family: 'Roboto';
+  }
+  
+  .section {
+    height: 100vh;
+
+  
+h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3em;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+  }
+  
+h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+    margin-bottom: 1.2em;
+  }
+  
+.important-text {
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.7em;
+    color: rgb(197, 189, 189);
+  }
+}  
+.row{
+    &.row-ib { margin-top: 40px;
+      img {
+        width: 150px;
+        height: 150px; 
+        margin: auto; 
+      }
+      .fas {
+        position:absolute;
+        margin-left: 52px;
+        margin-top: 45px;
+        color: white; 
+        font-size: 35px; 
+      }
+      h4 {
+        font-weight: 400;
+        font-size: 1.2em;
+        
+      }
+      p {
+        margin-top: 20px;
+        color: rgb(148, 142, 142);
+        font-size: 1em;
+        line-height: 1.5em;
+        
+      }  
+      div {
+        box-shadow:0 0 10px  rgba(109, 104, 104,0.5);
+        border-radius: 10%;
+    display: inline-block;
+    /*background-color: red;*/
+    width: 31.99%;
+    height: 35vh;
+    margin-right: 2%;
+    &:last-child {
+      margin-right: 0;}
+    
+      
+     
+  }
+    }
+  }
+.container {
+    width: 1140px;
+    margin: auto;
+    
+  }
+
+#header-main {
+    background-color: aqua;
+  }
+  
+#section-advantages {
+    /*background-color: cornflowerblue;*/
+    text-align: center;
+  }
+#section-manage {
+    background-color: cadetblue;
+    .container {
+      padding-top: 20vh;
+      float: left;
+      width: 50vw;
+      margin-left: 5vw;
+      h1,h2 {text-align: left;}
+      span {
+        float: left;
+        font-size: 30px;
+        margin-right: 15px;
+      }
+      div {
+        
+        margin-bottom: 25px;
+         p { line-height: 1.5em;}
+        }
+    }
+} 
+.manage-image {
+  float: left;
+  width: 40vw;
+  height: 100vh;
+  background-color: chartreuse;
+}
+@media (max-width:1000px) {
+  .container {
+    width: 700px;
+  }
+  .row {
+  &.row-ib {margin-top: 30px;
+  div {
+    /*display: block;*/
+    width: 25%;
+    height: 70%;
+  }
+  /*.section h1 {
+    font-size: 1em;
+  }
+  .section h2,.container>p.important-text,p {
+    font-size: 0.5em;
+  }
+  .row.row-ib {
+    p,h4 {font-size: 0.5em;}
+  }*/
+  #section-manage .container {
+    float: none;
+    padding-top: 2vh;
+  }
+}
+  }
+}

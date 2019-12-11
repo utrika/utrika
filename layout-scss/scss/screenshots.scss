@@ -1,0 +1,78 @@
+.section {
+    height: 100vh;
+
+
+    h1 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 3em;
+        margin-top: 1em;
+        margin-bottom: 0.3em;
+    }
+
+    h2 {
+        text-align: center;
+        font-weight: 300;
+        font-size: 2em;
+        margin-bottom: 1.2em;
+    }
+
+    .important-text {
+        font-size: 1.2em;
+        text-align: center;
+        line-height: 1.7em;
+        color: rgb(148, 142, 142);
+    }
+}
+.container {
+    width: 1140px;
+    margin: auto;
+
+}
+#screenshots {
+    .container {
+        overflow: hidden;
+        padding-bottom: 60px;
+    }
+    .carousel {
+        margin-top: 80px;
+        position: relative;
+        .owl-item {
+            img {
+                transform: scale(1.0);
+                transition: 0.5s;
+            }
+        }
+          .owl-item.active.center {
+              img {transform: scale(1.4);
+              }
+          }
+          .owl-stage-outer {
+              overflow: visible!important;
+          }
+          .owl-dots {
+              position: relative;
+              top: 50px;
+          }
+          .item img {
+              border-radius: 20px;
+          }
+        .overlay-phone {
+            position: absolute;
+            width: 274px;
+            height: 550px;
+            /*background-color: chartreuse;*/
+            background-image: url('../images/phone-frame2.png');
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: 100% 500px;
+            top: 0;
+            z-index: 1000;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+    } 
+}

@@ -1,0 +1,83 @@
+.section {
+  height: 100vh;
+}
+
+.section h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 3em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+.section h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2em;
+  margin-bottom: 1.2em;
+}
+
+.section .important-text {
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.7em;
+  color: #948e8e;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+#screenshots .container {
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+
+#screenshots .carousel {
+  margin-top: 80px;
+  position: relative;
+}
+
+#screenshots .carousel .owl-item img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#screenshots .carousel .owl-item.active.center img {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+#screenshots .carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+
+#screenshots .carousel .owl-dots {
+  position: relative;
+  top: 50px;
+}
+
+#screenshots .carousel .item img {
+  border-radius: 20px;
+}
+
+#screenshots .carousel .overlay-phone {
+  position: absolute;
+  width: 274px;
+  height: 550px;
+  /*background-color: chartreuse;*/
+  background-image: url("../images/phone-frame2.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+/*# sourceMappingURL=screenshots.css.map */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/navigation.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous" />
+    <title>Layout-SCSS</title>
+    <style>
+        #navbar {
+            font-family: 'Roboto';
+            background-color: rgb(41, 70, 70);
+        }
+        .container {
+            width: 1140px;
+            
+            margin: auto;
+            
+        }    
+        ul {
+            display: flex;
+            justify-content:space-around;
+            height: 100px;
+            
+        }
+        li {
+            align-self: center;
+        }
+        li a{
+            color: white;
+            text-decoration: none;
+            flex-direction: row;
+            
+        }
+        li:first-child {
+            flex-grow: 0.5;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li class="brend"><a href=""><img src="images/logo-white-1x.png" alt=""></a></li>
+                <li class="dropdown"><a href="">Home <i class="fas fa-sort-down"></i></a></li>
+                <li class="activ"><a href="">About</a></li>
+                <li><a href="">Features!</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Screenshots</a></li>
+                <li class="dropdown"><a href="">Pages <i class="fas fa-sort-down"></i></a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Contact</a></li>
+                <li class="burger"><a href=""><i class="fas fa-bars"></i></a> </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

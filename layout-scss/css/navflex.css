@@ -1,0 +1,93 @@
+body {
+  background-color: blue;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar .container {
+  width: 1140px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  #navbar .container {
+    width: 960px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #navbar .container {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  #navbar .container {
+    width: 90%;
+  }
+}
+
+#navbar .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#navbar .container li.brend {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+#navbar .container li:not(.brend) {
+  margin: 10px;
+}
+
+@media screen and (max-width: 980px) {
+  #navbar .container li:not(.brend) {
+    display: none;
+  }
+}
+
+#navbar .container li.burger {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  #navbar .container li.burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*&:hover ~li {
+                    background-color: red;
+                    display: block;
+                    width: 100%;
+                }*/
+  }
+}
+
+/*burger open/close*/
+#navbar:target > .container > ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#navbar:target > .container > ul > li:not(.brend) {
+  display: block;
+}
+
+#navbar:target > .container > ul li.burger {
+  display: none;
+}
+/*# sourceMappingURL=navflex.css.map */

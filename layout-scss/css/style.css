@@ -1,0 +1,152 @@
+body {
+  font-family: 'Roboto';
+}
+
+.section {
+  height: 100vh;
+}
+
+.section h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 3em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+.section h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2em;
+  margin-bottom: 1.2em;
+}
+
+.section .important-text {
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.7em;
+  color: #c5bdbd;
+}
+
+.row.row-ib {
+  margin-top: 40px;
+}
+
+.row.row-ib img {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+.row.row-ib .fas {
+  position: absolute;
+  margin-left: 52px;
+  margin-top: 45px;
+  color: white;
+  font-size: 35px;
+}
+
+.row.row-ib h4 {
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.row.row-ib p {
+  margin-top: 20px;
+  color: #948e8e;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.row.row-ib div {
+  -webkit-box-shadow: 0 0 10px rgba(109, 104, 104, 0.5);
+          box-shadow: 0 0 10px rgba(109, 104, 104, 0.5);
+  border-radius: 10%;
+  display: inline-block;
+  /*background-color: red;*/
+  width: 31.99%;
+  height: 35vh;
+  margin-right: 2%;
+}
+
+.row.row-ib div:last-child {
+  margin-right: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+#header-main {
+  background-color: aqua;
+}
+
+#section-advantages {
+  /*background-color: cornflowerblue;*/
+  text-align: center;
+}
+
+#section-manage {
+  background-color: cadetblue;
+}
+
+#section-manage .container {
+  padding-top: 20vh;
+  float: left;
+  width: 50vw;
+  margin-left: 5vw;
+}
+
+#section-manage .container h1, #section-manage .container h2 {
+  text-align: left;
+}
+
+#section-manage .container span {
+  float: left;
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+#section-manage .container div {
+  margin-bottom: 25px;
+}
+
+#section-manage .container div p {
+  line-height: 1.5em;
+}
+
+.manage-image {
+  float: left;
+  width: 40vw;
+  height: 100vh;
+  background-color: chartreuse;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 700px;
+  }
+  .row.row-ib {
+    margin-top: 30px;
+    /*.section h1 {
+    font-size: 1em;
+  }
+  .section h2,.container>p.important-text,p {
+    font-size: 0.5em;
+  }
+  .row.row-ib {
+    p,h4 {font-size: 0.5em;}
+  }*/
+  }
+  .row.row-ib div {
+    /*display: block;*/
+    width: 25%;
+    height: 70%;
+  }
+  .row.row-ib #section-manage .container {
+    float: none;
+    padding-top: 2vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
