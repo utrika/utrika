@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Viber Chart Ui</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="css/viber.css">
+</head>
+<body>
+  <!--1. classes/id - naming conventions (BEM)
+      2. position/absolute/fixed
+      3. vh,vw.vmax,vmin
+      4. fonts/em
+      5. scroll snapping
+      6. webp - новый формат картинок для интернета-->  
+   <div class="mockup_phone center-hv">
+       <div class="mockup_glass">
+           <div class="mockup_screen">
+             <!--###############-->
+                <div class="viber-app">
+                  <div class="status-bar">
+                      <a href=""><i class="fas fa-wifi"></i></a>
+                      <a href=""><i class="fas fa-signal"></i></a>
+                      <a href=""><i class="fas fa-battery-three-quarters"></i></a>
+                  </div>
+                  <div class="top-bar">
+                      <b>Viber</b>
+                    <div class="top-bar_search">
+                      <input type="checkbox" id="search-checkbox">
+                        <label for="search-checkbox">
+                          <i class="fas fa-search"></i>
+                        </label>
+              
+                        <label for="search-checkbox">
+                            <i class="fas fa-arrow-left"></i>
+                        </label>
+              
+                      <input type="text" placeholder="Seach...">
+                    </div>
+                  </div>
+                  <div class="chat-contacts">
+                    <ol class="chat-contacts__list">
+           <!--1-->     <li class="chat-contacts__contact">
+                            <div class="chat-contacts__preview">
+                                <img class="chat-contacts__avatar" src="images/avataaars.png" alt="Rose Blum">
+                                <div class="chat-contacts__message">
+                                    <h3>Rose Blum <i class="fas fa-check-circle"></i></h3>
+                                    <p><b>You:</b> Hello, my dear!</p>
+                                </div>
+                            </div>
+                            <div class="chat-contacts__timestamp">
+                                <div class="chat-contacts__status unread">
+                                    <i class="fas fa-check"></i><i class="fas fa-check"></i>
+                                    <time datetime="11:11">11:11</time>
+                                </div>
+                                <span class="chat-contacts__counter">
+                                    777
+                                </span>
+                            </div>
+            
+                        </li>
+                        
+            <!--2-->    <li class="chat-contacts__contact">
+                            <div class="chat-contacts__preview">
+                                <img class="chat-contacts__avatar" src="images/avataaars (1).png" alt="Herry Dan">
+                                <div class="chat-contacts__message">
+                                    <h3>Herry Dan </h3>
+                                    <p><b>How are you??????</b></p>
+                                </div>
+                            </div>
+                            <div class="chat-contacts__timestamp">
+                                <div class="chat-contacts__status read">
+                                    <i class="fas fa-check"></i><i class="fas fa-check"></i>
+                                    <time datetime="23:40">23:40</time>
+                                </div>
+                                <span class="chat-contacts__counter">
+                                1
+                                </span>
+                            </div>
+                        </li>
+            
+            <!--3-->    <li class="chat-contacts__contact">
+                            <div class="chat-contacts__preview">
+                                <img class="chat-contacts__avatar" src="images/avataaars2.png" alt="Lusy Lui">
+                                <div class="chat-contacts__message">
+                                    <h3>Lusy Lui </h3>
+                                    <p><b>I'll be back soon))))</b></p>
+                                </div>
+                            </div>
+                            <div class="chat-contacts__timestamp">
+                                <div class="chat-contacts__status read">
+                                    <i class="fas fa-check"></i><i class="fas fa-check"></i>
+                                    <time datetime="12:36">12:36</time>
+                                </div>
+                            </div>
+                        </li>
+            
+            <!--4-->    <li class="chat-contacts__contact">
+                            <div class="chat-contacts__preview">
+                                <img class="chat-contacts__avatar" src="images/avataaars3.png" alt="Mos Craciun">
+                                <div class="chat-contacts__message">
+                                    <h3>Mos Craciun </h3>
+                                    <p><b>hi cu noi la munte </b></p>
+                                </div>
+                            </div>
+                            <div class="chat-contacts__timestamp">
+                                <div class="chat-contacts__status send">
+                                    <i class="fas fa-check"></i>
+                                    <time datetime="06:09">06:09</time>
+                                </div>
+                                <span class="chat-contacts__counter">
+                                    3
+                                </span>
+                            </div>
+                        </li>
+            <!--5-->    <li class="chat-contacts__contact">
+                            <div class="chat-contacts__preview">
+                                <img class="chat-contacts__avatar" src="images/avataaars4.png" alt="Our favorite 6A">
+                                <div class="chat-contacts__message">
+                                    <h3>Our favorite 6A</h3>
+                                    <p><b>Photo message</b></p>
+                                </div>
+                            </div>
+                            <div class="chat-contacts__timestamp">
+                                <div class="chat-contacts__status unread">
+                                    <i class="fas fa-check"></i><i class="fas fa-check"></i>
+                                    <time datetime="20:58">20:58</time>
+                                </div>
+                                <span class="chat-contacts__counter">
+                                    1
+                                </span>
+                            </div>
+                        </li>
+            <!--6-->    <li class="chat-contacts__contact">
+                            <div class="chat-contacts__preview">
+                                <img class="chat-contacts__avatar" src="images/avataaars5.png" alt="David GGGGG">
+                                <div class="chat-contacts__message">
+                                    <h3>David GGGGG </h3>
+                                    <p><b>Ok</b></p>
+                                </div>
+                            </div>
+                            <div class="chat-contacts__timestamp">
+                                <div class="chat-contacts__status send">
+                                    <i class="fas fa-check"></i>
+                                    <time datetime="11:56">11:56</time>
+                                </div>
+                               
+                            </div>
+                        </li>
+            <!--7-->    <li class="chat-contacts__contact">
+                            <div class="chat-contacts__preview">
+                                <img class="chat-contacts__avatar" src="images/avataaars6.png" alt="Mama Mia">
+                                <div class="chat-contacts__message">
+                                    <h3>Mama Mia </h3>
+                                    <p><b>Helloooooo</b></p>
+                                </div>
+                            </div>
+                            <div class="chat-contacts__timestamp">
+                                <div class="chat-contacts__status read">
+                                    <i class="fas fa-check"></i><i class="fas fa-check"></i>
+                                    <time datetime="17:25">17:25</time>
+                                </div>
+                                <span class="chat-contacts__counter">
+                                    12
+                                </span>
+                            </div>
+                        </li>
+                    </ol>    
+                </div>
+                  <div class="bottom-bar">
+                    <nav class="bottom-bar_navigation">
+                        <ul class="navigation_links">
+                            <li>
+                                <a href=""><i class="far fa-comment-dots"></i>Chats</a></li>
+                            <li>
+                                <a href=""><i class="fas fa-phone-alt"></i>Calls</a></li>
+                            <li>
+                                <a href=""><i class="fas fa-ellipsis-h"></i>More</a></li>
+                        </ul>
+                      </nav> 
+                  </div>
+                  <div class="new-chat">
+                    <a href=""><i class="far fa-comment-dots"></i></a>
+                  </div>
+            </div>
+        </div>   
+   </div>
+   
+</body>
+</html>

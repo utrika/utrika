@@ -1,0 +1,6 @@
+@keyframes slyding {
+    from {transform: translateX(0)}
+    to {
+        transform: translateX(calc(100vw - 9*(24vh*4/3 + 1vh)))
+    }
+}

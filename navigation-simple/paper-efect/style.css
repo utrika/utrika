@@ -1,0 +1,88 @@
+body {
+    background-image: url(912395ad.png);
+    /*background-repeat: no-repeat;*/
+}
+#foto {
+    width: 1200px;
+    height: 800px;
+    border: solid 20px white;
+    background-color: rgb(61, 59, 59);
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px 6px rgb(59, 58, 58);
+}
+#foto>.text {
+    width: 200px;
+    height: 800px;
+    background-color: rgb(61, 59, 59);
+    float: right;
+}
+#foto>.text>ul>li:first-child>a>i,#foto>.text>ul>li:nth-child(2)>a>i {
+    padding-top: 20px;
+    font-size: 50px;
+    line-height: 150px; 
+    color: #fff;
+    margin-left: 30px;
+    
+}
+#foto>.text>ul>li:nth-child(3)>a>i {
+    line-height: 400px;
+    font-size: 150px;
+    color: #fff;
+    margin-top: 170px;
+    margin-left: 30px;
+}
+#foto>.image {
+    
+    margin-top: -40px;
+    width: 1000px;
+    height: 800px;
+    perspective: 1000px;
+}
+#foto>.image>div {
+    width: 200px;
+    height: 800px;
+    background-image:url(483-1000x800-grayscale.jpg);
+    float: left;
+}
+#foto>.image>div:nth-child(2) {
+    background-position: -200px 0;
+    transform: rotateY(-25deg) scale(1.053) translateX(-24px);
+}
+#foto>.image>div:nth-child(3) {
+    background-position: -400px 0;
+    transform: rotateY(25deg) scale(1.028) translateX(-33.5px);
+}
+#foto>.image>div:nth-child(4) {
+    background-position: -600px 0;
+    transform: rotateY(-25deg) scale(1.063) translateX(-41.5px);
+}
+#foto>.image>div:nth-child(5) {
+    background-position: -800px 0;
+    transform: rotateY(25deg) scale(1.015) translateX(-69.9px);
+}
+#foto>.image>div:first-child>div {
+    width: 200px;
+    height: 800px;
+    background-image:linear-gradient(180deg,#0009,transparent) 
+}    
+#foto>.image>div:nth-child(2)>div {
+    width: 200px;
+    height: 800px;
+    background-image:linear-gradient(90deg,#0009,transparent) 
+}    
+#foto>.image>div:nth-child(3)>div {
+        width: 200px;
+        height: 800px;
+        background-image:linear-gradient(90deg,#fff6,transparent) 
+}  
+#foto>.image>div:nth-child(4)>div {
+    width: 200px;
+    height: 800px;
+    background-image:linear-gradient(90deg,#0009,transparent) 
+}  
+#foto>.image>div:nth-child(5)>div {
+    width: 200px;
+    height: 800px;
+    background-image:linear-gradient(90deg,#fff6,transparent) 
+}       

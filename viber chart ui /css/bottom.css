@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(184, 155, 211);
+}
+.navigation_links {
+    background-color: #252859;
+}
+.bottom-bar_navigation>.navigation_links>li {
+    display: inline-block;
+}
+.bottom-bar_navigation {
+    text-align: center;
+}
+.bottom-bar_navigation>.navigation_links>li>a>i {
+    font-size: 30px;
+    display: block;
+}
+.bottom-bar_navigation>.navigation_links>li>a {
+    padding-left: 35px;
+    padding-right: 35px;
+    display: block;
+    text-decoration: none;
+    color: #79838C;
+}

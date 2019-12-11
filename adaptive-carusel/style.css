@@ -1,0 +1,44 @@
+#carousel {
+    width: 840px;
+    height: 480px;
+    background-color: blueviolet;
+}
+.center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+/*position---left для центрирования элемента */
+}
+#carousel img {
+    position: absolute;
+}
+#carousel img:first-child  {
+    left: -300px;
+    transform: scale(0.7);
+}
+#carousel img:last-child {
+    right: -300px;
+    transform: scale(0.7)
+}
+#carousel img:nth-child(2) {
+    z-index:1;
+}
+#carousel>.controls  {
+    width: 100%;
+    position: absolute;
+    top: 240px;
+} 
+#carousel>.controls>a:first-child {
+    position: absolute;
+    left: 10px;
+    font-size: 40px;
+    color: rgb(26, 97, 138);
+}
+#carousel>.controls>a:last-child {
+    position: absolute;
+    right: 10px;
+    font-size: 40px;
+}

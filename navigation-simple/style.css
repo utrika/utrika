@@ -1,0 +1,49 @@
+body {
+    font-family: 'Poppins',
+    sans-serif;
+}
+#main-nav {
+    background-color: dimgray;
+    width: 100%;
+    padding:5vh 0;
+}
+#main-nav>ul {
+     float: right;
+}
+#main-nav>.nav-brand {
+    float: left;
+    margin-left: 4vw;
+}
+#main-nav>.nav-menu {
+    margin-right: 4vw;
+    margin-left: 3vw;
+}
+#main-nav li {
+    float: left;
+}
+#main-nav>.nav-action li {
+    float: left;
+    }
+.nav-social>li {
+    float: left;
+    padding-left: 2vw;
+}
+.nav-action {
+     padding-right: 2vw;
+     border-right: solid 2px rgb(216, 207, 207);
+}
+a {
+    color: ghostwhite;
+    text-decoration-line: none;
+}
+#main-nav>.nav-brand>.logotip {
+    margin-right: 1.5vw;
+    float: left;
+    width: 1.5vw;
+    height: 3vh;
+    border: solid 5px honeydew;
+    }
+    p {
+        font-size: 12px;
+        color: rgb(180, 174, 174);
+    }

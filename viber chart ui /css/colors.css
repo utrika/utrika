@@ -1,0 +1,62 @@
+/* Color Theme Swatches in Hex */
+.ezgif-1-hex {
+    color: #705CF2;
+}
+
+.ezgif-2-hex {
+    color: #252859;
+}
+
+.ezgif-3-hex {
+    color: #161F26;
+}
+
+.ezgif-4-hex {
+    color: #79838C;
+}
+
+.ezgif-5-hex {
+    color: #21400A;
+}
+
+/* Color Theme Swatches in RGBA */
+.ezgif-1-rgba {
+    color: rgba(112, 92, 242, 1);
+}
+
+.ezgif-2-rgba {
+    color: rgba(37, 40, 89, 1);
+}
+
+.ezgif-3-rgba {
+    color: rgba(22, 31, 38, 1);
+}
+
+.ezgif-4-rgba {
+    color: rgba(121, 131, 140, 1);
+}
+
+.ezgif-5-rgba {
+    color: rgba(33, 64, 10, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.ezgif-1-hsla {
+    color: hsla(248, 85, 65, 1);
+}
+
+.ezgif-2-hsla {
+    color: hsla(236, 41, 24, 1);
+}
+
+.ezgif-3-hsla {
+    color: hsla(206, 26, 11, 1);
+}
+
+.ezgif-4-hsla {
+    color: hsla(208, 7, 51, 1);
+}
+
+.ezgif-5-hsla {
+    color: hsla(94, 72, 14, 1);
+}

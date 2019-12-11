@@ -1,0 +1,46 @@
+body {
+    background-color: red;
+    margin: 0;
+     }
+     /* css reset - сброс стилей */
+     /* style*/
+body { 
+    background-color: rgb(101, 22, 117);
+}  
+#preloader {
+    color: #005;
+    height: 7vh;
+    width: 7vh;
+    border: 1px solid rgb(152, 189, 18);
+    margin: 47.3vh auto;/* более компактно*/
+    border-radius: 100%;
+    line-height: 7vh;
+    text-align: center;
+    letter-spacing: normal;
+    animation: rot 1s 5;
+    
+}  
+/*css animation*/
+/*@keyframes rot{
+    from{transform: rotate(0deg);}
+    to{  transform: rotate(360deg);}*/
+/* } */
+@keyframes wave {
+    from { color: #0050;}
+    to{    color: #005F;    }
+    
+}
+#preloader span:first-child {  
+    animation: wave 1s 5; 
+    animation: invis 2s 5 forwards;
+}
+#preloader span:last-child {
+    animation: wave 0.5s 5;
+    animation-delay: 0.25s;
+    animation: invis 2s 5 forwards;
+}
+@keyframes invis {
+    from {opacity: 1;}
+    to {opacity: 0;}
+    }
+}

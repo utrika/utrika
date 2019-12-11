@@ -1,0 +1,83 @@
+body {
+    background-image: url(b3e353d7.png);
+}
+.overlay {
+    position: absolute;
+    /*width: 100%;*/
+    width: calc(9*(24vh*4/3 + 1vh));
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-image: radial-gradient(transparent, rgba(11, 23, 38, 0.7));
+ }
+#box {
+    top:30vh;
+    left: 33vw;
+    margin-left: -20vh;
+    position: absolute;
+    border-radius: 20vh;
+    width: 40vh;
+    height: 40vh;
+    background-color: rgb(3, 101, 140);
+    box-shadow: 0 0 20px 5px rgb(2, 15, 24);
+}
+#play-btn {
+    z-index: 1;
+    top: 5vh;
+    left: 5vh;
+    position: absolute;
+    border-radius: 15vh;
+    width: 30vh;
+    height: 30vh;
+    background-color: rgba(210, 223, 228, 0.8);
+    text-align: center;
+    line-height: 30vh;
+    font-size: calc(30vh/4);
+    box-shadow: 0 0 20px 5px rgb(2, 15, 24);
+    background: linear-gradient(135deg, rgba(128, 173, 191, 0.8),  rgba(110, 108, 212));
+}
+a {
+    color: rgb(2, 56, 89);
+}
+#film {
+    top: 6vh;
+    left: calc(20vh - 33vw);
+    position: absolute;
+    height: 28vh;
+    width: calc(9*(24vh*4/3 + 1vh));
+    animation: slyding 100s infinite forwards;
+    animation-direction: alternate;
+    filter: drop-shadow(20px 20px 20px rgb(2, 15, 24));
+    /*animation-timing-function: linear;*/
+    /*background-color: rgb(2, 56, 89);*/
+}
+#film img {
+    float: left;
+   /* margin-right: 20px;   /*исправить баг с расстониями между картинками*/ 
+    height: 24vh;
+    margin-top: 2vh;
+    padding-right: 1vh;
+    background-color: rgba(11, 23, 38, 0.7);
+
+    
+}
+/*#film .spaser {
+    float: left;
+    width: 20px;
+    height: 1px;
+}*/
+#film>.holes {
+    background-image: radial-gradient(transparent 49%, rgba(11, 23, 38, 0.7) 50%);
+    background-size: 1.5vw 2vh;
+    position: absolute;
+    height: 2vh;
+    width: inherit;
+    /*background-color: grey;*/
+} 
+#film>.holes:last-child {
+    bottom: 0;
+}
+#play-btn:hover+#film {
+    animation-duration: 10s;
+}

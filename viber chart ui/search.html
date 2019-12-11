@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="css/search.css">
+    
+    <style>
+      .top-bar_search>#search-checkbox,
+      .top-bar_search>#search-checkbox+label+label, 
+      .top-bar_search>#search-checkbox+label+label+input[type=text] {
+        display: none; /*полностью скрывает элемент с экрана */
+      }
+      .top-bar_search>#search-checkbox:checked+label+label,
+      .top-bar_search>#search-checkbox:checked+label+label+input[type=text] {
+      display: inline; /*полностью открывает элемент с экрана */
+      }
+      .top-bar_search>#search-checkbox:checked+label,
+      .top-bar_search>#search-checkbox:checked+label+label+input[type=text]+b {
+      display: none; 
+      }
+    </style>
+  </head>
+<body>
+    <div class="top-bar">
+      <div class="top-bar_search">
+        <input type="checkbox" id="search-checkbox">
+          <label for="search-checkbox">
+            <i class="fas fa-search"></i>
+          </label>
+
+          <label for="search-checkbox">
+              <i class="fas fa-arrow-left"></i>
+          </label>
+
+        <input type="text" placeholder="Seach...">
+           <b>Viber</b>
+    
+      </div>
+    </div>
+</body>
+</html>
