@@ -18,6 +18,7 @@
            position: fixed;
            z-index: 1;
            bottom: 15vh;
+           
        }
        nav a {
            width: 10vh;
@@ -26,7 +27,7 @@
            border: 0.5vh solid rgb(223, 218, 218);
            opacity: 0;
            transition: 0.5s;
-           line-height: 7vh;
+           line-height: 6vh;
            font-size: 2em;
            text-align: center;
        }
@@ -36,6 +37,8 @@
        li {
            list-style: none;
            position: absolute;
+           left: 2vh;
+           top: 2vh;
        }
        li:first-child a {
            border-top-color: blue;
@@ -53,11 +56,14 @@
            /* position: absolute; */
            width: 15vh;
            height: 15vh;
-          margin-left: 5vh;
+           margin-left: 10vh;
            border-radius: 100%;
            border: 0.5vh solid rgb(231, 168, 168);
-         
-           
+           animation: pulse 0.9s 100; 
+       }
+       @keyframes pulse {
+           from { border-color:rgb(231, 168, 168) ;}
+           to {  border-color:rgb(253, 251, 251) ;}
        }
     </style>
 </head>
